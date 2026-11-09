@@ -6,7 +6,6 @@
 import React, { useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { HowItWorksBar } from "./components/HowItWorksBar";
 import { VideoSection } from "./components/VideoSection";
 import { WhyParticipateSection } from "./components/WhyParticipateSection";
 import { FinalCtaSection } from "./components/FinalCtaSection";
@@ -66,10 +65,7 @@ export default function App() {
         {/* 1. Hero Principal com Logo 3D Metálico e Bolas Numeradas */}
         <Hero />
 
-        {/* 2. Barra de Como Funciona em 4 Passos */}
-        <HowItWorksBar />
-
-        {/* 3. Seção de Ganhadores e Prêmios — Carrossel Infinito com Carrossel de Palavras */}
+        {/* 2. Seção de Ganhadores e Prêmios — Carrossel Infinito com Carrossel de Palavras */}
         <VideoSection />
 
         {/* 4. Seção — Por Que Participar? com Mockup do Smartphone */}

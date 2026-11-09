@@ -52,13 +52,6 @@ export const VideoSection: React.FC = () => {
           <p className="mt-3 text-xl sm:text-2xl font-condensed font-bold text-[#FFB000] tracking-wide uppercase italic">
             "Aqui no Hold, a sorte realmente acontece!"
           </p>
-          <p className="mt-1 text-sm sm:text-base text-neutral-300 font-sans max-w-xl mx-auto">
-            Confira as entregas e os prêmios dos nossos sorteios. Todos os ganhadores são reais e comprovados!
-          </p>
-
-          <p className="mt-2 text-xs text-neutral-500 font-sans flex items-center justify-center gap-1.5">
-            <span>Passe o mouse ou toque para pausar • Clique na foto para ampliar sem cortes</span>
-          </p>
         </div>
 
         {/* 1. CARROSSEL INFINITO DE IMAGENS EM UMA LINHA SÓ (SAINDO DA DIREITA PARA A ESQUERDA) */}
