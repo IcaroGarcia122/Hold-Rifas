@@ -1,0 +1,6 @@
+{
+  "name": "HOLD BAR SPORTS & MUSIC — Rifas e Prêmios",
+  "description": "Landing page oficial do Hold Bar Sports & Music: concorra a prêmios incríveis, sorteios transparentes e faça parte da nossa comunidade exclusiva no WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

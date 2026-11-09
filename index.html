@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+          if (originalFetch) {
+            var currentFetch = originalFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return currentFetch; },
+              set: function(val) { currentFetch = val; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <title>HOLD BAR SPORTS & MUSIC — Rifas e Prêmios</title>
+    <meta name="description" content="Landing page oficial do Hold Bar Sports & Music: concorra a prêmios incríveis, sorteios transparentes e faça parte da nossa comunidade exclusiva no WhatsApp." />
+    <meta property="og:title" content="HOLD BAR SPORTS & MUSIC — Rifas e Prêmios" />
+    <meta property="og:description" content="Landing page oficial do Hold Bar Sports & Music: concorra a prêmios incríveis, sorteios transparentes e faça parte da nossa comunidade exclusiva no WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#050505" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Saira+Extra+Condensed:ital,wght@1,800;1,900&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Preload das imagens críticas para carregamento 100% instantâneo (Mobile & Desktop) -->
+    <link rel="preload" as="image" href="/assets/images/hero_hold_bar_mobile.webp" media="(max-width: 640px)" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/images/hero_hold_bar.webp" media="(min-width: 641px)" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/images/logo_hold_ouro.webp" type="image/webp" fetchpriority="high" />
+  </head>
+  <body class="bg-[#050505] text-white selection:bg-[#FF7900] selection:text-black antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
