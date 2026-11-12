@@ -110,6 +110,55 @@ export const VideoSection: React.FC = () => {
           </div>
         </div>
 
+        {/* 2. GALERIA ESTÁTICA COM TODAS AS IMAGENS (SEM CARROSSEL) */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 sm:mt-14">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-6">
+            {items.map((item) => (
+              <div
+                key={`grid-${item.id}`}
+                onClick={() => setSelectedItem(item)}
+                className="group relative rounded-2xl sm:rounded-3xl bg-[#121212] border border-neutral-800/90 hover:border-[#FF7900] p-2.5 sm:p-3 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_35px_rgba(255,121,0,0.35)] cursor-pointer overflow-hidden flex flex-col"
+              >
+                {/* Glow ambient inside card */}
+                <div className="absolute -top-16 -right-16 w-36 h-36 bg-[#FF7900]/20 rounded-full blur-2xl group-hover:bg-[#FF7900]/40 transition-all pointer-events-none" />
+
+                {/* Badge Superior */}
+                <div className="flex items-center justify-between mb-2 z-10">
+                  <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-black/70 border border-[#FF7900]/40 text-[9px] sm:text-[10px] font-condensed font-bold uppercase tracking-wider text-[#FFB000] truncate max-w-[75%]">
+                    {item.tag}
+                  </span>
+                  <div className="w-6 h-6 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center text-neutral-400 group-hover:text-white group-hover:border-[#FF7900] transition-colors shrink-0">
+                    <Maximize2 className="w-3 h-3" />
+                  </div>
+                </div>
+
+                {/* Imagem do Produto/Ganhador em Destaque */}
+                <div className="relative aspect-[3/4] w-full rounded-xl sm:rounded-2xl overflow-hidden bg-neutral-950 border border-neutral-800/80 mb-2.5 flex items-center justify-center">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 select-none"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="320"
+                    height="426"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                </div>
+
+                {/* Nome do Produto Embaixo */}
+                <div className="w-full py-2 px-2.5 sm:py-2.5 sm:px-3 rounded-xl bg-neutral-900/90 border border-neutral-800 group-hover:border-[#FF7900]/80 group-hover:bg-[#1a1a1a] transition-all flex items-center justify-between mt-auto">
+                  <h4 className="font-condensed font-black text-xs sm:text-base uppercase italic tracking-wide text-white group-hover:text-[#FFB000] truncate">
+                    {item.title}
+                  </h4>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FF7900] group-hover:translate-x-1 transition-transform shrink-0 ml-1.5" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Pilares de Credibilidade e Botão Central de WhatsApp */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
