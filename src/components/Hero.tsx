@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "../config/site";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[92vh] lg:min-h-screen pt-24 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24 flex items-center justify-center overflow-hidden bg-[#050505]">
+    <section className="relative lg:min-h-screen pt-24 pb-8 sm:pt-32 sm:pb-16 lg:pt-36 lg:pb-24 flex items-center justify-center overflow-hidden bg-[#050505]">
       {/* Background Image: Rifa Hold Prêmios no Bar Dourado (Otimizada com Picture Responsivo) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <picture>

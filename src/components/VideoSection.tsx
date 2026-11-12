@@ -28,7 +28,7 @@ export const VideoSection: React.FC = () => {
   return (
     <section
       id="premios"
-      className="relative py-16 lg:py-24 bg-[#050505] overflow-hidden border-t border-neutral-900"
+      className="relative pt-10 pb-14 sm:py-16 lg:py-24 bg-[#050505] overflow-hidden border-t border-neutral-900"
     >
       {/* Background ambient orange lighting */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-[#FF7900]/10 rounded-full blur-[140px] pointer-events-none" />
