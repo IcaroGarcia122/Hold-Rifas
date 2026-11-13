@@ -81,7 +81,7 @@ export const WhyParticipateSection: React.FC = () => {
                     3. COMUNIDADE ATIVA
                   </h3>
                   <p className="mt-1 text-xs sm:text-sm text-neutral-400 font-sans leading-relaxed">
-                    Mais de 3.200 membros participando com descontos exclusivos, sorteios relâmpago de cotas grátis e resenha esportiva.
+                    Comunidade exclusiva participando com descontos especiais, sorteios relâmpago de cotas grátis e muita interação no grupo.
                   </p>
                 </div>
               </div>
@@ -108,12 +108,12 @@ export const WhyParticipateSection: React.FC = () => {
             <div className="relative z-10 w-full max-w-[320px] xs:max-w-[360px] sm:max-w-[420px] lg:max-w-[450px] flex justify-center">
               <img
                 src="/assets/images/smartphone_whatsapp.webp"
-                alt="Smartphone com Chat do WhatsApp do Hold Bar VIP"
+                alt="Smartphone com Chat do WhatsApp da Hold Prêmios VIP"
                 loading="lazy"
                 decoding="async"
                 width="450"
-                height="600"
-                className="w-full h-auto object-contain filter drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)] hover:scale-[1.02] transition-transform duration-500 select-none"
+                height="751"
+                className="w-full h-auto object-contain rounded-3xl filter drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)] hover:scale-[1.02] transition-transform duration-500 select-none"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -121,7 +121,7 @@ export const WhyParticipateSection: React.FC = () => {
             {/* Disclaimer */}
             <div className="text-center mt-3">
               <span className="text-[11px] text-neutral-400 font-sans tracking-wide">
-                Grupo VIP oficial no WhatsApp &bull; Mais de 3.200 membros participando
+                Grupo VIP oficial da Hold Prêmios no WhatsApp
               </span>
             </div>
           </div>

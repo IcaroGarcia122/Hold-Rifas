@@ -20,7 +20,7 @@ export const HoldLogo: React.FC<HoldLogoProps> = ({
         <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center transition-transform hover:scale-105 duration-200">
           <img
             src={logoSrc}
-            alt="Hold Bar Sports & Music"
+            alt="Hold Prêmios"
             className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(255,121,0,0.7)]"
             referrerPolicy="no-referrer"
           />
@@ -39,7 +39,7 @@ export const HoldLogo: React.FC<HoldLogoProps> = ({
 
         <img
           src={logoSrc}
-          alt="Hold Bar Sports & Music Emblema Oficial"
+          alt="Hold Prêmios Emblema Oficial"
           className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain filter drop-shadow-[0_0_40px_rgba(255,121,0,0.7)]"
           referrerPolicy="no-referrer"
         />
@@ -53,7 +53,7 @@ export const HoldLogo: React.FC<HoldLogoProps> = ({
       <div className="relative w-28 h-28 sm:w-32 sm:h-32 shrink-0 flex items-center justify-center transition-transform hover:scale-105 duration-300">
         <img
           src={logoSrc}
-          alt="Hold Bar Sports & Music Logo Oficial"
+          alt="Hold Prêmios Logo Oficial"
           className="w-full h-full object-contain filter drop-shadow-[0_0_25px_rgba(255,121,0,0.8)]"
           referrerPolicy="no-referrer"
         />

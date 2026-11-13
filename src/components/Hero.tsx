@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Sparkles, Trophy, Users } from "lucide-react";
+import { ShieldCheck, Trophy } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton";
 import { SITE_CONFIG } from "../config/site";
 
@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
           />
           <img
             src="/assets/images/hero_hold_bar.webp"
-            alt="Hold Bar Sports & Music — Rifas e Sorteios"
+            alt="Hold Prêmios — Rifas e Sorteios"
             fetchPriority="high"
             loading="eager"
             decoding="sync"
@@ -41,19 +41,13 @@ export const Hero: React.FC = () => {
           {/* LADO ESQUERDO: Tipografia Extrema, Slogan Aumentado e Botão CTA — Alinhado para Mobile */}
           <div className="lg:col-span-7 flex flex-col items-center text-center sm:items-start sm:text-left overflow-visible">
             
-            {/* Top Tagline / Category Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-[#FF7900]/40 text-[#FFB000] text-xs font-condensed font-bold tracking-widest uppercase mb-5 shadow-[0_0_20px_rgba(255,121,0,0.3)]">
-              <Sparkles className="w-3.5 h-3.5 text-[#FF7900] animate-pulse" />
-              <span>Sorteios Oficiais &bull; Sports &bull; Live Music</span>
-            </div>
-
             {/* Título Principal */}
             <h1 className="font-hero text-6xl sm:text-7xl md:text-8xl xl:text-9xl leading-[0.88] select-none my-1 tracking-tight overflow-visible">
               <span className="block hero-rifas-text overflow-visible">
-                RIFAS DO
+                HOLD
               </span>
               <span className="block hero-hold-bar-text -mt-1 sm:-mt-2 overflow-visible">
-                HOLD BAR
+                PRÊMIOS
               </span>
             </h1>
 
@@ -77,7 +71,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Quick Trust Highlights */}
-            <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-neutral-800/80 grid grid-cols-3 gap-2 sm:gap-6 w-full max-w-xl text-neutral-400">
+            <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-neutral-800/80 grid grid-cols-2 gap-4 sm:gap-8 w-full max-w-md text-neutral-400">
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="flex items-center gap-1.5 text-white font-condensed font-bold text-base sm:text-xl">
                   <ShieldCheck className="w-4 h-4 text-[#FF7900] shrink-0" />
@@ -95,16 +89,6 @@ export const Hero: React.FC = () => {
                 </div>
                 <span className="text-[11px] sm:text-xs text-neutral-400 font-sans mt-0.5">
                   Prêmios entregues
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                <div className="flex items-center gap-1.5 text-white font-condensed font-bold text-base sm:text-xl">
-                  <Users className="w-4 h-4 text-[#FF7900] shrink-0" />
-                  <span>{SITE_CONFIG.stats.activeMembers}</span>
-                </div>
-                <span className="text-[11px] sm:text-xs text-neutral-400 font-sans mt-0.5">
-                  No grupo VIP
                 </span>
               </div>
             </div>

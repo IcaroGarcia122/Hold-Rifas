@@ -1,28 +1,27 @@
 /**
- * Configurações Centrais do HOLD BAR SPORTS & MUSIC
+ * Configurações Centrais da HOLD PRÊMIOS
  * Altere facilmente o link do WhatsApp, dados de contato e prêmios aqui.
  */
 
 export const SITE_CONFIG = {
-  brandName: "HOLD BAR SPORTS & MUSIC",
-  shortName: "HOLD BAR",
-  tagline: "Sports, Music & Prêmios Exclusivos",
+  brandName: "HOLD PRÊMIOS",
+  shortName: "HOLD PRÊMIOS",
+  tagline: "Rifas e Prêmios Exclusivos",
   
   // Link central do WhatsApp (utilizado em todos os CTAs)
-  whatsappGroupUrl: "https://chat.whatsapp.com/HoldBarRifasOficial",
-  whatsappDirectUrl: "https://wa.me/5511999998888?text=Ol%C3%A1!%20Vim%20pela%20Landing%20Page%20e%20quero%20entrar%20no%20grupo%20VIP%20de%20rifas%20do%20Hold%20Bar!",
+  whatsappGroupUrl: "https://chat.whatsapp.com/HGaW0H8agKR36iZ7rRTIi1?s=sw&p=i&iam=2",
+  whatsappDirectUrl: "https://wa.me/5511999998888?text=Ol%C3%A1!%20Vim%20pela%20Landing%20Page%20e%20quero%20entrar%20no%20grupo%20VIP%20de%20rifas%20da%20Hold%20Pr%C3%AAmios!",
   
   social: {
     instagram: "https://instagram.com/holdbar_pokerclub",
     instagramHandle: "@holdbar_pokerclub",
     drawNotice: "Datas e horários das rifas sempre avisados no Grupo VIP do WhatsApp",
-    supportEmail: "contato@holdbar.com.br",
+    supportEmail: "contato@holdpremios.com.br",
   },
 
   stats: {
     totalPrizesAwarded: "+R$ 180.000",
     totalWinners: "140+",
-    activeMembers: "3.200+",
     satisfactionRate: "100%",
   },
 

@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
           <a
             href="#"
             className="flex items-center gap-2 group transition-transform hover:scale-[1.02]"
-            aria-label="Hold Bar Sports & Music Home"
+            aria-label="Hold Prêmios Home"
           >
             <HoldLogo size="sm" />
           </a>

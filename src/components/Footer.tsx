@@ -13,14 +13,9 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col items-center text-center">
           
           {/* Logo Hold Centralizada */}
-          <div className="mb-6">
+          <div className="mb-8">
             <HoldLogo size="md" />
           </div>
-
-          {/* Pequena Descrição da Marca */}
-          <p className="max-w-xl text-sm sm:text-base text-neutral-400 font-sans leading-relaxed mb-8">
-            O <strong className="text-white">HOLD BAR SPORTS & MUSIC</strong> une paixão por esportes, música ao vivo e as melhores rifas do Brasil. Transparência garantida, extrações públicas e prêmios entregues na mão dos ganhadores.
-          </p>
 
           {/* Links de Navegação */}
           <nav className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-8 text-sm font-condensed font-bold uppercase tracking-wider text-neutral-300">

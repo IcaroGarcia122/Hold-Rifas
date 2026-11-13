@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  CheckCircle2,
   Shield,
   Sparkles,
   X,
@@ -39,7 +38,7 @@ export const VideoSection: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 border border-[#FF7900]/30 text-xs font-condensed font-bold tracking-widest uppercase text-[#FFB000] mb-3 shadow-[0_0_20px_rgba(255,121,0,0.2)]">
             <Sparkles className="w-3.5 h-3.5 text-[#FF7900]" />
-            <span>Prêmios & Ganhadores Oficiais • Hold Bar</span>
+            <span>Prêmios & Ganhadores Oficiais • Hold Prêmios</span>
           </div>
 
           <h2 className="font-condensed font-black text-4xl sm:text-5xl lg:text-6xl uppercase italic tracking-tight text-white leading-none">
@@ -159,31 +158,17 @@ export const VideoSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Pilares de Credibilidade e Botão Central de WhatsApp */}
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-neutral-900/70 border border-neutral-800">
-              <CheckCircle2 className="w-6 h-6 text-[#FF7900] shrink-0 mt-0.5" />
-              <div>
-                <h4 className="font-condensed font-bold text-lg uppercase text-white tracking-wide">
-                  Entrega em Mãos ou com Seguro
-                </h4>
-                <p className="text-xs sm:text-sm text-neutral-400 font-sans mt-0.5">
-                  Receba seu prêmio pessoalmente nos eventos do Hold Bar ou entregue na sua casa com nota fiscal e rastreio blindado.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-neutral-900/70 border border-neutral-800">
-              <Shield className="w-6 h-6 text-[#FFB000] shrink-0 mt-0.5" />
-              <div>
-                <h4 className="font-condensed font-bold text-lg uppercase text-white tracking-wide">
-                  Sorteios Avisados no Grupo VIP
-                </h4>
-                <p className="text-xs sm:text-sm text-neutral-400 font-sans mt-0.5">
-                  Datas e horários sempre informados com antecedência dentro do nosso grupo oficial do WhatsApp.
-                </p>
-              </div>
+        {/* Pilares de Credibilidade */}
+        <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
+          <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-neutral-900/70 border border-neutral-800">
+            <Shield className="w-6 h-6 text-[#FFB000] shrink-0 mt-0.5" />
+            <div>
+              <h4 className="font-condensed font-bold text-lg uppercase text-white tracking-wide">
+                Sorteios Avisados no Grupo VIP
+              </h4>
+              <p className="text-xs sm:text-sm text-neutral-400 font-sans mt-0.5">
+                Datas e horários sempre informados com antecedência dentro do nosso grupo oficial do WhatsApp.
+              </p>
             </div>
           </div>
         </div>
@@ -212,7 +197,7 @@ export const VideoSection: React.FC = () => {
             {/* Cabeçalho do Modal */}
             <div className="pr-12 mb-3">
               <span className="text-xs font-condensed font-bold uppercase tracking-wider text-[#FF7900]">
-                Hold Bar • {selectedItem.tag}
+                Hold Prêmios • {selectedItem.tag}
               </span>
               <h3 className="font-condensed font-black text-2xl sm:text-4xl uppercase italic text-white tracking-wide">
                 {selectedItem.title}

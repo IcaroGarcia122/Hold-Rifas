@@ -34,7 +34,7 @@ export const FloatingWhatsApp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="relative group w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#25D366] to-[#1EBE5D] flex items-center justify-center text-white shadow-[0_0_25px_rgba(37,211,102,0.6)] hover:shadow-[0_0_40px_rgba(37,211,102,0.9)] hover:scale-110 active:scale-95 transition-all duration-300"
-        aria-label="Entrar no Grupo do WhatsApp do Hold Bar"
+        aria-label="Entrar no Grupo do WhatsApp da Hold Prêmios"
       >
         {/* Radar wave ping */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-35 animate-ping pointer-events-none" />

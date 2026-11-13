@@ -9,7 +9,7 @@ export const FinalCtaSection: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="/assets/images/palco_cinematico.webp"
-          alt="Palco Cinemático do Hold Bar Sports & Music"
+          alt="Palco Cinemático da Hold Prêmios"
           loading="lazy"
           decoding="async"
           width="1600"
@@ -58,8 +58,8 @@ export const FinalCtaSection: React.FC = () => {
           />
         </div>
 
-        {/* Badges de Confiança Abaixo do Botão — Sem o card de loteria federal */}
-        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 text-xs text-neutral-300 font-sans w-full max-w-2xl">
+        {/* Badges de Confiança Abaixo do Botão */}
+        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 text-xs text-neutral-300 font-sans w-full max-w-lg">
           <div className="flex items-center justify-center gap-2 bg-neutral-900/60 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-neutral-800">
             <Zap className="w-4 h-4 text-[#FFB000] shrink-0" />
             <span className="truncate">Apuração Imediata</span>
@@ -67,10 +67,6 @@ export const FinalCtaSection: React.FC = () => {
           <div className="flex items-center justify-center gap-2 bg-neutral-900/60 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-neutral-800">
             <Trophy className="w-4 h-4 text-[#FF7900] shrink-0" />
             <span className="truncate">Prêmios Entregues</span>
-          </div>
-          <div className="flex items-center justify-center gap-2 bg-neutral-900/60 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-neutral-800">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-            <span className="truncate">+3.200 no Grupo</span>
           </div>
         </div>
 

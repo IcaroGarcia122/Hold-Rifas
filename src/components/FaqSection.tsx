@@ -30,7 +30,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Como recebo o meu prêmio?",
     answer:
-      "Você pode retirar o prêmio pessoalmente no Hold Bar ou enviamos com frete segurado e código de rastreamento diretamente para o seu endereço em qualquer lugar do Brasil.",
+      "Você pode retirar o prêmio pessoalmente na Hold Prêmios ou enviamos com frete segurado e código de rastreamento diretamente para o seu endereço em qualquer lugar do Brasil.",
   },
   {
     question: "Posso garantir mais de uma cota na mesma rifa?",
