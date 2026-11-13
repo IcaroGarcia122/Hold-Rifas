@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site";
+import { trackMetaContact } from "../utils/metaPixel";
 
 interface WhatsAppButtonProps {
   title?: string;
@@ -54,12 +55,19 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
     },
   }[size];
 
+  const handleClick = () => {
+    trackMetaContact();
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <a
       href={SITE_CONFIG.whatsappGroupUrl}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={onClick}
+      onClick={handleClick}
       className={`group relative inline-flex items-center justify-between rounded-full bg-gradient-to-r from-[#FFB000] via-[#FFA200] to-[#FF8C00] shadow-[0_0_35px_rgba(255,165,0,0.65),0_10px_25px_rgba(0,0,0,0.6)] hover:shadow-[0_0_60px_rgba(255,165,0,0.95)] hover:scale-[1.02] active:scale-98 transition-all duration-300 border border-amber-300/40 select-none ${
         sizeConfig.padding
       } ${sizeConfig.gap} ${fullWidth ? "w-full" : "w-full sm:w-auto"} ${className}`}

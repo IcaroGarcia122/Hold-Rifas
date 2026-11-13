@@ -2,6 +2,7 @@ import React from "react";
 import { MessageCircle, Mail, Instagram, ShieldCheck } from "lucide-react";
 import { HoldLogo } from "./HoldLogo";
 import { SITE_CONFIG } from "../config/site";
+import { trackMetaContact } from "../utils/metaPixel";
 
 export const Footer: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ export const Footer: React.FC = () => {
               href={SITE_CONFIG.whatsappGroupUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackMetaContact}
               className="text-[#FFB000] hover:text-[#FF7900] transition-colors"
             >
               Grupo VIP WhatsApp

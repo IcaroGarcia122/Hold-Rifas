@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { SITE_CONFIG } from "../config/site";
+import { trackMetaContact } from "../utils/metaPixel";
 
 export const FloatingWhatsApp: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
@@ -33,6 +34,7 @@ export const FloatingWhatsApp: React.FC = () => {
         href={SITE_CONFIG.whatsappGroupUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={trackMetaContact}
         className="relative group w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#25D366] to-[#1EBE5D] flex items-center justify-center text-white shadow-[0_0_25px_rgba(37,211,102,0.6)] hover:shadow-[0_0_40px_rgba(37,211,102,0.9)] hover:scale-110 active:scale-95 transition-all duration-300"
         aria-label="Entrar no Grupo do WhatsApp da Hold Prêmios"
       >
